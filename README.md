@@ -1,5 +1,5 @@
 ## Welcome to xkami's blog !
-### [HTML+CSS+JS](./html/html_css.md)
+### [HTML+CSS+JS](./html/html+css.md)
 ### [Oracle学习](./oracle/oracle.md)
 ### 设计模式
 [创建型模式](设计模式/创建型模式.md)
