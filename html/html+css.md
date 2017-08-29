@@ -115,7 +115,7 @@
     - px px
     - bottom right
   - 列表属性及总结
-    - ![列表属性](列表属性.png)
+    - ![列表属性](list_attr.png)
 - css样式二
   - 盒模型
     - margin
