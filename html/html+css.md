@@ -1,0 +1,191 @@
+# HTML+CSS学习计划
+
+## 学习大纲
+- html基础
+  - 什么是html
+  - html结构
+  - 基本块级标签
+    - h1-5
+    - p
+  - 布局块级标签
+    - ol li
+    - ul li
+    - dl dt dd
+    - table tr td
+    - form
+    - div
+  - 行级标签
+    - img
+    - span
+    - br
+  - 标签属性
+    - 通用属性 id,name,class,style
+    - 常用属性 align，bgcolor，border
+- html基本标签
+  - 超链接：路径
+    - href url
+  - 超链接：锚链接
+    - 页面内锚链接href \#mark
+    - 页面间锚链接href url\#mark
+  - 超链接：功能性链接
+    - mailto\:email
+  - 注释和特殊符号
+    - \<!\-\-注释内容 \-\-\>
+    - 空格 \&nbsp;
+    - 大于 \&gt;
+    - 小于 \&lt;
+    - 引号 \&quot;
+    - 版权号 \&copy;
+  - form语法
+    - action method
+    - input
+  - form标签
+    - text
+    - password
+    - submit,reset,button,image
+    - radio checked
+    - checkbox checked
+    - file
+    - select option
+    - textarea cols rows
+    - hidden
+    - readonly disabled
+- html表格应用和布局
+  - 结构及语法
+  - 属性
+    - cellspacing属性：规定单元格与表边框之间、单元格之间的空间。
+    - cellpadding属性：规定单元格边沿与其内容之间的空白。
+    - colspan  属性表示跨多少列；该行其他单元格则对应省略
+    - rowspan  属性表示跨多少行
+
+  - 高级属性及应用场合
+    - 表头\<th>
+    - 表格标题\<caption>
+    - 页眉\<thead>
+    - 数据主体\<tbody>
+    - 页脚\<tfoot>
+
+- html框架
+  - 语法
+    - frame src
+  - 常用属性
+    - target a
+      - \_blank 在新窗口中打开被链接文档。
+      - \_self 默认。在相同的框架中打开被链接文档。
+      - \_parent 在父框架中打开被链接文档。
+      - \_top 在整个窗口中打开被链接文档
+      - framename 在指定的框架中打开被链接文档
+- css样式一
+  - css简介
+  - css基本语法
+  - 基本选择器
+    - 标签选择器
+    - 类选择器
+    - id选择器
+  - 选择器优先级
+    - id>类>标签
+  - 组合选择器
+    - 群组选择器：同时匹配所有元素 中间用，隔开
+    - 后代选择器：匹配所有属于E元素后代的F元素 中间用空格隔开
+  - 文本属性
+    - ![文字样式](文字样式.png)
+    - 字体大小 font-size
+    - 对齐 text-align
+    -  规定文本的垂直对齐方式 vertical-align
+    - 行高 line-height
+    - 颜色 color
+    - 加粗 font-weight:bold
+    - 隐藏列表符 list-style:none
+    - 文本修饰-下划线 text-decoration:underline
+    - 空白处理-不换行 white-space:nowrap
+    - 字符间距 letter-spacing
+    - 规定文本的方向 / 书写方向。 direction
+    - 规定文本块首行的缩进。 text-indent
+    - font-family 规定文本的字体系列。
+  - 背景属性
+   - background
+   - background-color
+   - background-image
+   - background-repeat
+      - no-repeat
+      - repeat-x
+      - repeat-y
+      - repeat
+   - background-position
+    - px px
+    - bottom right
+  - 列表属性及总结
+    - ![列表属性](列表属性.png)
+- css样式二
+  - 盒模型
+    - margin
+    - border
+    - padding
+    - 盒子高度 = height属性 + 上下填充高度 + 上下边框高度
+    - 盒子宽度 = width属性 + 左右填充宽度 + 左右边框宽度
+
+  - 盒模型应用-简单布局
+  - div+css布局
+    - container header main footer
+  - float属性
+      - DIV块元素失去“块状”换行显示特征，变为行内元素
+      - 紧贴上一个浮动元素（同方向）或父级元素的边框，
+      - 占据行内元素的空间，导致行内元素围绕显示
+
+  - clear属性
+    - left 在左侧不允许浮动元素
+    - right 在右侧不允许浮动元素
+    - both 在左右两侧均不允许浮动元素
+    - none 默认值，允许浮动元素出现在两侧
+  - 其他常用属性
+- css样式三
+  - 介绍伪类
+    ![超链接伪类样式](超链接伪类样式.png)
+  - 如何使用伪类
+    - 确定页面所有链接样式是否相同，否则分开定义
+    - 先定义四个状态共有样式，再分别定义其他状态
+  - 三类样式的区别
+    - HTML和CSS在同一文件，方便开发时修改，样式和内容分离不够彻底，不利于页面复用
+    - 分别定义*.css和*.html文件，样式和内容彻底分离，多个网页可共享同一CSS
+    - 单独定义某个元素的样式，灵活方便。但因为内容与样式混写在一起，应尽量少用或不用
+  - 样式的优先级
+    - 行内样式表 > 内部样式表 > 外部样式表文件 > 浏览器默认设置
+  - ul-li布局介绍
+    - 布局结构
+      - 图文参差并列结构，宜采用div-ul-li实现
+      - 每块内容各占一个<li>
+    - 各类样式
+      - 列表样式：去除
+      - 右对齐：float浮动
+      - 超链接：无下划线样式
+      - 调整文本对齐和间距
+  - dl-dt-dd布局介绍
+    - 图文混编结构，宜用div-dl-dt-dd结构。
+    - <dl>做结构容器，方便扩展<dt>放图片，<dd>放文字，
+    - 图片和文字一行：采用float
+    - 调整文字样式
+
+- 页面分析与开发
+  - dw介绍
+  - 登录页开发
+  - 其他页面
+- html任务-都市生活+
+  - 任务简介
+  - 登录页面
+  - 后台页面
+  - 前台页面
+  - 发布信息
+
+## 任务流程
+- 学习html基础知识
+- 学习css基础知识
+- 练习页面分析与开发(看自己的情况)
+- 完成html任务-都市生活+
+
+## 时间安排
+- 周一、周二学习完html+css基础知识
+- 周三、周四完成都市生活+项目
+
+## 任务要求
+- 每章节学完，记录知识点(只要key，不要value，要能做到看到知识点名称就能大概回想起具体内容)，重点内容可以记录补充
+- 同时对于有问题的知识点，先记录下来，然后从网上搜索相关资料或询问组内成员
